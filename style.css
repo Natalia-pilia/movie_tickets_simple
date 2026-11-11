@@ -1,0 +1,197 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./font/Gilroy-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.theater{
+    width: 721px;
+    height: 696px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 44px;
+    margin-top: 100px;
+
+
+    .screen{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        .line{
+        background-image: url(./line.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 630px;
+        height: 67px;
+        margin-left: 50px;
+        }
+
+        p{
+            font-size: 34px;
+            font-weight: 500;
+            color: #2F2F2F;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .bottom_seats{
+        margin-top: 50px;
+    }
+
+    .top_seats, .bottom_seats{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+        .letter{
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .seats{
+            width: 715px;
+            height: 62px;
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+
+            .seat{
+                width: 62px;
+                height: 62px;
+                border-radius: 12px;
+
+                &.white{
+                    background-color: #F4F3F3;
+                }
+
+                &.blue{
+                    background-color: #DAE6FF;
+                }
+
+                &.red{
+                    background-color: #FFD6E4;
+                }
+
+                &.space{
+                    width: 62px;
+                    height: 62px;
+                    border-radius: 12px;
+                    background-color: transparent;
+                }
+
+                &.red:hover, &.blue:hover, &.white:hover{
+                    background-color: #E50B14;
+                    border: 4px solid #BA1111;
+
+                    &.one::before{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 44px;
+                        content: "1";
+                    }
+
+                    &.two::before{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 44px;
+                        content: "2";
+                    }
+
+                    &.three::before{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 44px;
+                        content: "3";
+                    }
+
+                    &.four::before{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 44px;
+                        content: "4";
+                    }
+
+                    &.five::before{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 44px;
+                        content: "5";
+                    }
+
+                    &.six::before{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 44px;
+                        content: "6";
+                    }
+
+                    &.seven::before{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 44px;
+                        content: "7";
+                    }
+
+                    &.eight::before{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 44px;
+                        content: "8";
+                    }
+
+                    &.nine::before{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 44px;
+                        content: "9";
+                    }
+                }
+
+               
+            }
+            
+        }
+            
+    }
+}
+
+
